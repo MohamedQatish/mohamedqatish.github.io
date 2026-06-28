@@ -1986,3 +1986,177 @@ p {
 .skill-level {
   animation: fillBar 1.5s ease forwards;
 }
+/* ============================================
+   FIX: Projects Section - Mobile Display Fix
+   ============================================ */
+
+@media (max-width: 768px) {
+  /* إخفاء الخط العمودي على الموبايل */
+  .projects-timeline::before {
+    display: none !important;
+  }
+
+  /* إعادة تعيين تخطيط العناصر */
+  .project-timeline-item {
+    display: block !important;
+    width: 100% !important;
+    margin-bottom: var(--space-xl) !important;
+    padding: 0 !important;
+  }
+
+  /* إظهار التاريخ بشكل طبيعي */
+  .timeline-date {
+    width: 100% !important;
+    text-align: center !important;
+    padding: 0 0 var(--space-sm) 0 !important;
+    margin-bottom: var(--space-sm) !important;
+    border-bottom: 2px solid var(--primary);
+  }
+
+  .date-month {
+    font-size: 0.85rem !important;
+  }
+  .date-year {
+    font-size: 0.75rem !important;
+  }
+
+  .timeline-date.live-badge {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .exp-current,
+  .exp-start {
+    margin-top: 0 !important;
+  }
+
+  /* بطاقات المشاريع - عرض كامل */
+  .project-card {
+    width: 100% !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    border-radius: var(--radius-md) !important;
+  }
+
+  .project-body {
+    overflow: visible !important;
+    padding: var(--space-md) !important;
+  }
+
+  .project-header {
+    padding: var(--space-md) !important;
+  }
+
+  .project-title-wrapper {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: var(--space-xs) !important;
+    width: 100% !important;
+  }
+
+  .project-title {
+    font-size: 1.1rem !important;
+    word-break: break-word !important;
+    width: 100% !important;
+  }
+
+  .project-badge {
+    font-size: 0.6rem !important;
+    padding: 0.2rem 0.6rem !important;
+    align-self: flex-start !important;
+  }
+
+  .project-role {
+    font-size: 0.8rem !important;
+  }
+
+  .project-description {
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .project-features ul {
+    padding-left: 0 !important;
+  }
+
+  .project-features li {
+    font-size: 0.85rem !important;
+    line-height: 1.5 !important;
+    word-break: break-word !important;
+  }
+
+  .project-tech {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.4rem !important;
+  }
+
+  .tech-tag {
+    font-size: 0.65rem !important;
+    padding: 0.2rem 0.6rem !important;
+  }
+
+  .project-links {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: var(--space-sm) !important;
+  }
+
+  .project-link {
+    width: 100% !important;
+    justify-content: center !important;
+    font-size: 0.8rem !important;
+    padding: 0.5rem !important;
+  }
+}
+
+/* ============================================
+   FIX: Small Mobile (max-width: 480px)
+   ============================================ */
+
+@media (max-width: 480px) {
+  .project-card {
+    padding: 0 !important;
+  }
+
+  .project-body {
+    padding: var(--space-sm) !important;
+  }
+
+  .project-title {
+    font-size: 1rem !important;
+  }
+
+  .project-features li {
+    font-size: 0.8rem !important;
+  }
+
+  .tech-tag {
+    font-size: 0.6rem !important;
+    padding: 0.15rem 0.5rem !important;
+  }
+
+  .project-link {
+    font-size: 0.75rem !important;
+    padding: 0.4rem !important;
+  }
+
+  .timeline-date {
+    padding: 0 0 var(--space-xs) 0 !important;
+    margin-bottom: var(--space-xs) !important;
+  }
+
+  .date-month {
+    font-size: 0.75rem !important;
+  }
+  .date-year {
+    font-size: 0.65rem !important;
+  }
+
+  .exp-current,
+  .exp-start {
+    font-size: 0.55rem !important;
+    padding: 0.1rem 0.4rem !important;
+  }
+}
